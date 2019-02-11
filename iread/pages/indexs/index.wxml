@@ -1,0 +1,37 @@
+<!--pages/indexs/index.wxml-->
+<!-- avatarUrl -->
+<view class='container' wx:if="{{articles.title}}">
+    <button hidden='true'>查看历史</button>
+    <view class='title'>{{articles.title}}</view>
+    <view class='author'>{{articles.author}}</view>
+    <!-- <text>\n</text> -->
+    <view class='hr'></view>
+    <!-- <text>\n</text> -->
+    <text>{{articles.content}}</text>
+    <view class='bottom-button'>
+        <text class='view'>{{articles.view}}人阅读</text>
+        <image class='heart' src='images/{{heart}}' mode='aspectFit' bind:tap="like"></image>
+        <text>{{articles.like}}</text>
+    </view>
+    <view class="comment-form">
+        <input class='comment-input' maxlength="255" placeholder="请输入评论内容" bindinput="inputComment" value='{{inputComment}}' />
+        <button class='comment-button' hover-class="comment-button-hover" size='mini' type='primary' plain='true' bind:tap="comment">评论</button>
+    </view>
+    <view class='hr'></view>
+    <view class='comment'>
+        <view class='comment-box' wx:if="{{comments[0]}}" wx:for="{{comments}}" wx:key="{{index}}">
+            <image class='comment-head' src='{{item.avatarUrl}}'></image>
+            <view class='comment-primary'>
+                <view class='comment-authorzan'>
+                    <text class='comment-author'>{{item.nickName}}\n</text>
+                    <view class='comment-zan' bind:tap="admire" data-id='{{item.id}}' data-index='{{index}}'>
+                        <image src="images/{{item.flag?'zan2.png':'zan1.png'}}"></image>
+                        <text>{{item.admire}}</text>
+                    </view>
+                </view>
+                <text class='comment-content'>{{item.content}}</text>
+            </view>
+        </view>
+        <view class='comment-default' wx:if="{{!comments[0]}}">暂无评论</view>
+    </view>
+</view>

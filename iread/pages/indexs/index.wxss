@@ -1,0 +1,111 @@
+/* pages/indexs/index.wxss */
+
+.container {
+    padding: 15rpx;
+    overflow: hidden;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.author {
+    font-weight: bold;
+}
+
+.hr {
+    width: 100%;
+    margin: 15rpx 0;
+    border-bottom: 1rpx dotted #ccc;
+}
+
+.bottom-button {
+    text-align: right;
+    width: 100%;
+    margin: 30rpx 15rpx;
+}
+
+.heart {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.view {
+    color: #777;
+    font-size: 0.9em;
+    float: left;
+    margin-left: 5rpx;
+}
+
+.comment-form {
+    width: 100%;
+    height: 55rpx;
+}
+
+.comment-input {
+    width: 79%;
+    height: 100%;
+    display: inline-block;
+    border: 1px solid #eee;
+}
+
+.comment-button {
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+}
+
+.comment-button-hover {
+}
+
+.comment {
+    width: 100%;
+}
+
+.comment-box {
+    position: relative;
+    margin: 30rpx 0;
+}
+
+.comment-head {
+    width: 50rpx;
+    height: 50rpx;
+    /* position: absolute; *//* top: 0; */
+    float: left;
+    margin-top: 8rpx;
+}
+
+.comment-primary {
+    margin-left: 65rpx;
+}
+
+comment-authorzan {
+    position: relative;
+}
+
+.comment-author {
+    color: #777;
+}
+
+.comment-zan {
+    position: absolute;
+    right: 20rpx;
+    top: 0;
+}
+
+.comment-zan image {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.comment-content {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.comment-default {
+    text-align: center;
+    font-size: 1.2em;
+    opacity: 0.8;
+}

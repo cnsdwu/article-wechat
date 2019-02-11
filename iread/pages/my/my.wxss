@@ -1,0 +1,47 @@
+/* pages/my/my.wxss */
+
+.container {
+    padding: 25rpx;
+    display: block;
+}
+
+.userinfo {
+}
+
+.userinfo-avatar {
+    width: 85rpx;
+    height: 85rpx;
+    /* margin: 20rpx; */
+    border-radius: 50%;
+    float: left;
+}
+
+.userinfo-nickname {
+    line-height: 85rpx;
+    margin-left: 15rpx;
+    /* color: #aaa; */
+}
+
+.list-item {
+    border-bottom: 1px solid #eee;
+    margin-top: 30rpx;
+    padding-bottom: 30rpx;
+}
+
+.list-item-left {
+    display: inline-block;
+}
+
+.list-item-left image {
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.list-item-left text{
+    line-height: 40rpx;
+    margin-left: 15rpx;
+}
+
+.list-item-right {
+    float: right;
+}
